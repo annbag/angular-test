@@ -5,25 +5,19 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
     templateUrl: './child.component.html',
     styleUrls: ['./child.component.css']
 })
-export class ChildComponent {
+export class ChildComponent implements OnInit {
 
-    @Input() item: string;
-    @Output() newItemEvent = new EventEmitter<string>();
+    @Input() title: string;
+    @Input() description: string;
+    @Output() newItemEvent: EventEmitter<string> = new EventEmitter();
 
-    @Output() color: EventEmitter<string> = new EventEmitter();
-    
+    constructor() { }
+
+    ngOnInit() {
+    }
 
     addNewItem(value: string) {
         this.newItemEvent.emit(value);
     }
 
-    changeColor(color: string) {
-        console.log(color);
-        this.color.emit(color);
-    }
-
 }
-
-
-
-

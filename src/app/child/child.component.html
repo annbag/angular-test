@@ -1,8 +1,6 @@
-<label>Add an item:
+<p>{{title}}</p>
+<p>{{description}}</p>
+<label>Add item:
     <input #newItem>
 </label>
-<button (click)="addNewItem(newItem.value)">Add to parent's list</button>
-
-<button (click)="changeColor('tomato')">Button red</button>
-<button (click)="changeColor('lightblue')">Button blue</button>
-<button (click)="changeColor('lightgreen')">Button green</button>
+<button (click)="addNewItem(newItem.value)">Add to list</button>

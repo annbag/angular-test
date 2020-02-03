@@ -4,13 +4,13 @@ import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
-import { ParnetComponent } from './parnet/parnet.component';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
-    ParnetComponent
+    ParentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,0 @@
-<div [ngStyle]="{backgroundColor: color}">
-
-
-    <app-child (newItemEvent)="addItem($event)" (color)="color=$event"></app-child>
-
-    <ul>
-        <li *ngFor="let item of items">{{item}}</li>
-    </ul>
-</div>
